@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Time Table</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>     
+    <div id="main">
+      <div >
+        <div id="nav_top">
+          <header>
+            <nav class="nav-container">
+              <a href="../Course Info/courseinfo.html">Course Info</a>
+              <a href="../FeedBack/feedBack.html">FeedBack</a>
+            </nav>
+          </header>
+        </div>
+        <h1><strong><u>Time Table</u></strong></h1>
+        <div class="form-container">
+          <form id="course-form">
+            <label for="course-name">Course Name:</label>
+            <input type="text" id="course-name" name="course-name" placeholder="ShortCut"><br><br>
+    
+            <label for="course-code">Course Code:</label>
+            <input type="text" id="course-code" name="course-code" placeholder="CSEXXXX" maxlength = "7"><br><br>
+    
+            <label for="slot">Slot:</label>
+            <label for="theory">Theory:</label>
+            <select id="theory" name="theory">
+              <option value="">Select a theory slot</option>
+              <option value="A1+TA1+TAA1">A1+TA1+TAA1</option>
+              <option value="A2+TA2+TAA2">A2+TA2+TAA2</option>
+              <option value="B1+TB1+TBB1">B1+TB1+TBB1</option>
+              <option value="B2+TB2+TBB2">B2+TB2+TBB2</option>
+              <option value="C1+TC1+TCC1">C1+TC1+TCC1</option>
+              <option value="C2+TC2+TCC2">C2+TC2+TCC2</option>
+              <option value="D1+TD1+TDD1">D1+TD1+TDD1</option>
+              <option value="D2+TD2+TDD2">D2+TD2+TDD2</option>
+              <option value="A1+TA1">A1+TA1</option>
+              <option value="A2+TA2">A2+TA2</option>
+              <option value="B1+TB1">B1+TB1</option>
+              <option value="B2+TB2">B2+TB2</option>
+              <option value="C1+TC1">C1+TC1</option>
+              <option value="C2+TC2">C2+TC2</option>
+              <option value="D1+TD1">D1+TD1</option>
+              <option value="D2+TD2">D2+TD2</option>
+              <option value="E1+TE1">E1+TE1</option>
+              <option value="E2+TE2">E2+TE2</option>
+              <option value="F1+TF1">F1+TF1</option>
+              <option value="F2+TF2">F2+TF2</option>
+              <option value="A1">A1</option>
+              <option value="A2">A2</option>
+              <option value="B1">B1</option>
+              <option value="B2">B2</option>
+              <option value="C1">C1</option>
+              <option value="C2">C2</option>
+              <option value="D1">D1</option>
+              <option value="D2">D2</option>
+              <option value="E1">E1</option>
+              <option value="E2">E2</option>
+              <option value="F1">F1</option>
+              <option value="F2">F2</option>
+              <option value="TA1">TA1</option>
+              <option value="TA2">TA2</option>
+              <option value="TB1">TB1</option>
+              <option value="TB2">TB2</option>
+              <option value="TC1">TC1</option>
+              <option value="TC2">TC2</option>
+              <option value="TD1">TD1</option>
+              <option value="TD2">TD2</option>
+              <option value="TE1">TE1</option>
+              <option value="TE2">TE2</option>
+              <option value="TF1">TF1</option>
+              <option value="TF2">TF2</option>
+            </select><br><br>
+            <label for="lab">Lab:</label>
+            <select id="lab" name="lab">
+              <option value="">Select a lab slot</option>
+              <option value="No Lab">No Lab</option>
+              <option value="L01+L02">L01+L02</option>
+              <option value="L03+L04">L03+L04</option>
+              <option value="L05+L06">L05+L06</option>
+              <option value="L07+L08">L07+L08</option>
+              <option value="L09+L10">L09+L10</option>
+              <option value="L11+L12">L11+L12</option>
+              <option value="L13+L14">L13+L14</option>
+              <option value="L15+L16">L15+L16</option>
+              <option value="L17+L18">L17+L18</option>
+              <option value="L19+L20">L19+L20</option>
+              <option value="L21+L21">L21+L22</option>
+              <option value="L23+L23">L23+L24</option>
+              <option value="L25+L25">L25+L26</option>
+              <option value="L27+L28">L27+L28</option>
+              <option value="L29+L30">L9+L30</option>
+              <option value="L31+L32">L31+L32</option>
+              <option value="L33+L34">L33+L34</option>
+              <option value="L35+L36">L35+L36</option>
+              <option value="L37+L38">L37+L38</option>
+              <option value="L39+L40">L39+L40</option>
+              <option value="L41+L42">L41+L42</option>
+              <option value="L43+L44">L43+L44</option>
+              <option value="L45+L46">L45+L46</option>
+              <option value="L47+L48">L47+L48</option>
+              <option value="L49+L40">L49+L50</option>
+              <option value="L51+L52">L51+L52</option>
+              <option value="L53+L54">L53+L54</option>
+              <option value="L55+L56">L55+L56</option>
+              <option value="L57+L58">L57+L58</option>
+              <option value="L59+L60">L59+L60</option>
+            </select><br><br>
+    
+            <button type="submit" id="submit-btn">Submit</button>
+            <button type="reset" id="reset-button">Reset</button>
+            <button id="delete-btn">Delete</button>
+          </form>
+        </div>
+    
+        <div class="myTable">
+          <table id="myTable">
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Theory Slot</th>
+                <th>Lab Slot</th>
+                <th id="credits">Credits</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Total Credits</td>
+                <td id="total"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+    
+        <div class="mySlotTable" id="mySlotTable">
+          <table>
+            <tbody id="mySlotBody">
+              <tr>
+                <td class="A1">A1</td>
+                <td class="B1">B1</td>
+                <td class="C1">C1</td>
+                <td class="D1">D1</td>
+                <td class="E1">E1</td>
+                <td class="F1">F1</td>
+              </tr>
+              <tr>
+                <td class="A2">A2</td>
+                <td class="B2">B2</td>
+                <td class="C2">C2</td>
+                <td class="D2">D2</td>
+                <td class="E2">E2</td>
+                <td class="F2">F2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+        <div class="table-container" id="tableContainer">
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2">Theory</th>
+                <th>Start Time:</th>
+                <th>09:00</th>
+                <th>10:00</th>
+                <th>11:00</th>
+                <th>12:00</th>
+                <th>13:00</th>
+                <th>14:00</th>
+                <th>15:00</th>
+                <th>16:00</th>
+                <th>17:00</th>
+                <th>18:00</th>
+                <th>19:00</th>
+              </tr>
+              <tr>
+                <th>End Time:</th>
+                <th>09:50</th>
+                <th>10:50</th>
+                <th>11:50</th>
+                <th>12:50</th>
+                <th>14:00</th>
+                <th>14:50</th>
+                <th>15:50</th>
+                <th>16:50</th>
+                <th>17:50</th>
+                <th>18:50</th>
+                <th>19:50</th>
+              </tr>
+              <tr>
+                <th rowspan="2">Lab</th>
+                <th>Start Time:</th>
+                <th>09:00</th>
+                <th>09:50</th>
+                <th>11:00</th>
+                <th>11:50</th>
+                <th>13:00</th>
+                <th>14:00</th>
+                <th>14:50</th>
+                <th>16:00</th>
+                <th>16:50</th>
+                <th>18:00</th>
+                <th>18:50</th>
+              </tr>
+              <tr>
+                <th>End Time:</th>
+                <th>09:50</th>
+                <th>10:40</th>
+                <th>11:50</th>
+                <th>12:40</th>
+                <th>14:00</th>
+                <th>14:50</th>
+                <th>15:40</th>
+                <th>16:50</th>
+                <th>17:40</th>
+                <th>18:50</th>
+                <th>19:40</th>
+              </tr>
+            </thead>
+            <tbody id="mBody">
+              <tr>
+                <th rowspan="2">Monday</th>
+                <th>Theory</th>
+                <td class=" D1 L01">D1</td>
+                <td class=" C1 L01">C1</td>
+                <td class=" F1 TCC2 L03">F1/TCC2</td>
+                <td class=" TE1 L03">TE1</td>
+                <td class="Lunch" rowspan="12">Lunch</td>
+                <td class=" D2 L25">D2</td>
+                <td class=" C2 L25">C2</td>
+                <td class=" F2 L27">F2/TCC1</td>
+                <td class=" TE2 L27">TE2</td>
+                <td class=" - L29">-</td>
+                <td class=" - L29">-</td>
+            </tr>
+            <tr>
+              <th>Lab</th>
+              <td class=" L01">L01</td>
+              <td class=" L01">L02</td>
+              <td class=" L03">L03</td>
+              <td class=" L03">L04</td>
+              <td class=" L25">L25</td>
+              <td class=" L25">L26</td>
+              <td class=" L27">L27</td>
+              <td class=" L27">L28</td>
+              <td class=" L29">L29</td>
+              <td class=" L29">L30</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Tuesday</th>
+              <th>Theory</th>
+              <td class=" B1 L05">B1</td>
+              <td class=" A1 L05">A1</td>
+              <td class=" C1 L07">C1</td>
+              <td class=" TD1 L07">TD1</td>
+              <td class=" B2 L31">B2</td>
+              <td class=" A2 L31">A2</td>
+              <td class=" C2 L33">C2</td>
+              <td class=" TD2 L33">TD2</td>
+              <td class=" - L35">-</td>
+              <td class=" - L35">-</td>
+            </tr>
+            <tr>
+              <th>Lab</th>
+              <td class=" L05">L05</td>
+              <td class=" L05">L06</td>
+              <td class=" L07">L07</td>
+              <td class=" L07">L08</td>
+              <td class=" L31">L31</td>
+              <td class=" L31">L32</td>
+              <td class=" L33">L33</td>
+              <td class=" L33">L34</td>
+              <td class=" L35">L35</td>
+              <td class=" L35">L36</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Wednesday</th>
+              <th>Theory</th>
+              <td class=" E1 L09">E1</td>
+              <td class=" F1 TBB2 L09">F1/TBB2</td>
+              <td class=" TC1 L11">TC1</td>
+              <td class=" D1 L11">D1</td>
+              <td class=" E2 L37">E2</td>
+              <td class=" F2 TBB1 L37">F2/TBB1</td>
+              <td class=" TC2 L39">TC2</td>
+              <td class=" D2 L39">D2</td>
+              <td class=" - L41">-</td>
+              <td class=" - L41">-</td>
+            </tr>
+            <tr>
+              <th>Lab</th>
+              <td class=" L09">L09</td>
+              <td class=" L09">L10</td>
+              <td class=" L11">L11</td>
+              <td class=" L11">L12</td>
+              <td class=" L37">L37</td>
+              <td class=" L37">L38</td>
+              <td class=" L39">L39</td>
+              <td class=" L39">L40</td>
+              <td class=" L41">L41</td>
+              <td class=" L41">L42</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Thursday</th>
+              <th>Theory</th>
+              <td class=" F1 L13">F1</td>
+              <td class=" E1 L13">E1</td>
+              <td class=" TB1 L15">TB1</td>
+              <td class=" TA1 L15">TA1</td>
+              <td class=" F2 TDD1 L43">F2/TDD1</td>
+              <td class=" E2 L43">E2</td>
+              <td class=" TB2 45">TB2</td>
+              <td class=" TA2 45">TA2</td>
+              <td class=" - L47">-</td>
+              <td class=" - L47">-</td>
+            </tr>
+            <tr>
+                <th>Lab</th>
+                <td class=" L13">L13</td>
+                <td class=" L13">L14</td>
+                <td class=" L15">L15</td>
+                <td class=" L15">L16</td>
+                <td class=" L43">L43</td>
+                <td class=" L43">L44</td>
+                <td class=" L45">L45</td>
+                <td class=" L45">L46</td>
+                <td class=" L47">L47</td>
+                <td class=" L47">L48</td>
+              </tr>
+              <tr>
+                <th rowspan="2">Friday</th>
+                <th>Theory</th>
+                <td class=" C1 L17">C1</td>
+                <td class=" D1 L17">D1</td>
+                <td class=" E1 L19">E1</td>
+                <td class=" TF1 TAA2 L19">TF1/TAA2</td>
+                <td class=" C2 L49">C2</td>
+                <td class=" D2 L49">D2</td>
+                <td class=" E2 L51">E2</td>
+                <td class=" TF2 TAA1 L51">TF2/TAA1</td>
+                <td class=" - L53">-</td>
+                <td class=" - L53">-</td>
+              </tr>
+              <tr>
+                <th>Lab</th>
+                <td class=" L17">L17</td>
+                <td class=" L17">L18</td>
+                <td class=" L19">L19</td>
+                <td class=" L19">L20</td>
+                <td class=" L49">L49</td>
+                <td class=" L49">L50</td>
+                <td class=" L51">L51</td>
+                <td class=" L51">L52</td>
+                <td class=" L53">L53</td>
+                <td class=" L53">L54</td>
+              </tr>
+              <tr>
+                <th rowspan="2">Saturday</th>
+                <th>Theory</th>
+                <td class=" B1 L21">B1</td>
+                <td class=" B1 L21">B1</td>
+                <td class=" A1 L23">A1</td>
+                <td class=" A1 L23">A1</td>
+                <td class=" B2 L55">B2</td>
+                <td class=" B2 L55">B2</td>
+                <td class=" A2 L57">A2</td>
+                <td class=" A2 L57">A2</td>
+                <td class=" - L59">-</td>
+                <td class=" - L59">-</td>
+              </tr>
+              <tr>
+                <th>Lab</th>
+                <td class=" L21">L21</td>
+                <td class=" L21">L22</td>
+                <td class=" L23">L23</td>
+                <td class=" L23">L24</td>
+                <td class=" L55">L55</td>
+                <td class=" L55">L56</td>
+                <td class=" L57">L57</td>
+                <td class=" L57">L58</td>
+                <td class=" L59">L59</td>
+                <td class=" L59">L60</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <table class="credits-container" id="credits-container">
+            <thead>
+              <tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>6</th><th>10</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>MGT1001</td><td>STS2006</td><td>FRL1001</td><td>CSE1006</td><td>CSE1008</td><td>CSE3032</td><td>BIC4002</td></tr>
+              <tr><td>&nbsp;</td><td>STS3006</td><td>FRL2004</td><td>CSE1007</td><td>CSE3003</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>STS1002</td><td>LIB1007</td><td>CSE4019</td><td>CSE4006</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>STS1009</td><td>ENG3003</td><td>CSE3019</td><td>CSE4004</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>STS1004</td><td>MGT1040</td><td>CSE4001</td><td>CSE4002</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>STS1007</td><td>INL1001</td><td>PHY2004</td><td>CSE4005</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>STS2009</td><td>MEC1002</td><td>PHY2005</td><td>CSE3002</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>STS2007</td><td>FRL1006</td><td>PHY2006</td><td>CSE2019</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>STS2008</td><td>FRL1005</td><td>LIB1014</td><td>CSE1005</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>FRL1004</td><td>LIB2006</td><td>CSE2005</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>ECS1002</td><td>LIB3001</td><td>CSE2008</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>ECS3001</td><td>ENG1001</td><td>CSE2009</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>MEC1006</td><td>ENG1002</td><td>CSE3005</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>LIB1001</td><td>CSE4016</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>FRL2003</td><td>SWE2008</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>LIB1012</td><td>CSE3008</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ENG3001</td><td>CSE2013</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ENG1016</td><td>CSE4007</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MGT1007</td><td>ECE3018</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MAT2011</td><td>PHY2001</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MGT1015</td><td>ECE1002</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>TEC3001</td><td>ECE1003</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MGT2014</td><td>ECE1008</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>LAW1005</td><td>ECE2001</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MGT1029</td><td>ECE2002</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>LAW1003</td><td>MEC3029</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3018</td><td>PHY1008</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>PHY1002</td><td>CHY1009</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MGT1109</td><td>LIB2004</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MGT1103</td><td>MAT1002</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MAT2001</td><td>MAT2003</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ENG1017</td><td>MAT1003</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CHY1005</td><td>MAT2005</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CHY1007</td><td>MAT1001</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CHY1006</td><td>MAT1011</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MGT1036</td><td>MAT2013</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CHY2002</td><td>MAT2014</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>LAW1108</td><td>MGT2016</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>LIB1013</td><td>MGT1042</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>LAW2001</td><td>CSE2007</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MGT1002</td><td>CSE3004</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ENG1015</td><td>CSE3009</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ENG2001</td><td>CSE2010</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE1017</td><td>CSE4017</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4013</td><td>CSE4012</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3020</td><td>MAT1018</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4014</td><td>LIB2005</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE2012</td><td>HUM2104</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4022</td><td>ECE1010</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4010</td><td>LAW1008</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4009</td><td>MAT1021</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MEC2002</td><td>LIB1016</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>LIB2007</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>HUM2009</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3015</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE1012</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE2001</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CAP4001</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>LIB1015</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ECE2005</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MEC1008</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>HUM1007</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>PHY1011</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MEC1009</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4011</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4015</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4018</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4020</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4021</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3011</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3012</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4003</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4023</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE2022</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE1018</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ECE4013</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>MEC2016</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ECE4015</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4029</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4028</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4027</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4026</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ECE2011</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3013</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ECE4003</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3010</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3001</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE4008</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3007</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE3006</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CSE2011</td><td>&nbsp;</td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

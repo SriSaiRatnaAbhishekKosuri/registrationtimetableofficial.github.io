@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Information</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1><u>Course Information</u></h1>
+    <form class="form-container">
+        <label for="courseCode">Course Code:</label>
+        <input type="text" id="courseCode" maxlength="7" placeholder="CSEXXXX">
+        <label for="courseName">Course Name:</label>
+        <input type="text" id="courseName" placeholder="courseName">
+        <label for="category">Category:</label>
+        <input type="text" id="category">
+        <label for="credits">Credits:</label>
+        <input type="number" id="credits">
+        <button type="submit" id="searchButton">Search</button>
+    </form>
+    <table>
+        <thead>
+            <tr><th>Code</th><th>Course Name</th><th>Credits</th><th>Category</th></tr>
+        </thead>
+        <tbody>
+         <tr><td>CSE1008</td><td>Theory of Computation</td><td>4</td><td>PC</td></tr>
+         <tr><td>CSE3003</td><td>Computer Networks</td><td>4</td><td>PC</td></tr>
+         <tr><td>CSE4006</td><td>Deep Learning</td><td>4</td><td>UE</td></tr>
+         <tr><td>CSE4004</td><td>Web Technologies</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4002</td><td>Mobile Application Development</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE1006</td><td>Foundations for Data Analytics</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE4005</td><td>Data Warehousing and Data Mining</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3002</td><td>Artificial Intelligence</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE1007</td><td>Introduction to Cryptography</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE2019</td><td>Machine Learning</td><td>4</td><td></td></tr>
+         <tr><td>CSE3014</td><td>Software Design with UML</td><td>3</td><td></td></tr>
+         <tr><td>CSE4019</td><td>Applications of Artificial Intelligence</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE1005</td><td>Software Engineering</td><td>4</td><td>PC</td></tr>
+         <tr><td>CSE2005</td><td>Object Oriented Programming</td><td>4</td><td>UC</td></tr>
+         <tr><td>CSE2008</td><td>Operating Systems</td><td>4</td><td>PC</td></tr>
+         <tr><td>CSE2009</td><td>Soft Computing</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3005</td><td>Distributed Systems</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3019</td><td>Software Quality and Reliability</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE4001</td><td>Cloud Computing</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE4016</td><td>Database Administration</td><td>4</td><td>PE</td></tr>
+         <tr><td>SWE2006</td><td>Database Systems</td><td>4</td><td></td></tr>
+         <tr><td>SWE2008</td><td>Object Oriented Analysis and Design</td><td>4</td><td>UC</td></tr>
+         <tr><td>CSE3008</td><td>Introduction to Machine Learning</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE2013</td><td>Information Theory and Coding</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4007</td><td>Digital Image Processing</td><td>4</td><td>PE</td></tr>
+         <tr><td>ECE3018</td><td>IoT Fundamentals</td><td>4</td><td></td></tr>
+         <tr><td>PHY2001</td><td>Applied Electromagnetics</td><td>4</td><td></td></tr>
+         <tr><td>ECE1002</td><td>Fundamentals of Electrical and Electronics Engineering</td><td>4</td><td>UC</td></tr>
+         <tr><td>ECE1003</td><td>Digital Logic Design</td><td>4</td><td>PC</td></tr>
+         <tr><td>ECE1008</td><td>Sensors and Control Systems</td><td>4</td><td>UC</td></tr>
+         <tr><td>ECE2001</td><td>Analog Devices and Circuits</td><td>4</td><td>UE</td></tr>
+         <tr><td>ECE2002</td><td>Computer Organization and Architecture</td><td>4</td><td>PC</td></tr>
+         <tr><td>MEC2002</td><td>Thermodynamics</td><td>4</td><td>UC</td></tr>
+         <tr><td>MEC3029</td><td>Machining Processes and Workshop Technology</td><td>4</td><td>UE</td></tr>
+         <tr><td>PHY1008</td><td>Modern Physics</td><td>4</td><td>UC</td></tr>
+         <tr><td>PHY2004</td><td>Optoelectronics</td><td>3</td><td>UE</td></tr>
+         <tr><td>PHY2005</td><td>Introduction to Nanotechnology</td><td>3</td><td>UE</td></tr>
+         <tr><td>PHY2006</td><td>Solar Photovoltaics : Fundamentals and Technologies</td><td>3</td><td>UE</td></tr>
+         <tr><td>CHY1009</td><td>Chemistry and Environmental Studies</td><td>4</td><td>UC</td></tr>
+         <tr><td>FRL1001</td><td>Basic French</td><td>2</td><td>UC</td></tr>
+         <tr><td>LIB1014</td><td>Pursuit of Happiness</td><td>3</td><td>UE</td></tr>
+         <tr><td>FRL2004</td><td>Korean for Beginners</td><td>2</td><td>UC</td></tr>
+         <tr><td>LIB2006</td><td>Critical Thinking and Formal Logic</td><td>3</td><td>UE</td></tr>
+         <tr><td>LIB3001</td><td>Applications of Moral Philosophy</td><td>3</td><td>UE</td></tr>
+         <tr><td>ENG1001</td><td>English for Essential Communication</td><td>3</td><td>UC</td></tr>
+         <tr><td>ENG1002</td><td>English for Effective Communication</td><td>3</td><td>UC</td></tr>
+         <tr><td>LIB1001</td><td>Anthropology - An Introduction</td><td>3</td><td>UE</td></tr>
+         <tr><td>FRL2003</td><td>French for Engineers</td><td>3</td><td></td></tr>
+         <tr><td>LIB1007</td><td>Gender Studies</td><td>2</td><td>UE</td></tr>
+         <tr><td>LIB1012</td><td>Campus Fiction in India : An Introduction</td><td>3</td><td>UE</td></tr>
+         <tr><td>ENG3001</td><td>Translation Studies</td><td>3</td><td>UE</td></tr>
+         <tr><td>ENG3003</td><td>Literature and Psychology</td><td>2</td><td>UE</td></tr>
+         <tr><td>ENG1016</td><td>Climate Fiction- Narratives to Save the World!</td><td>3</td><td>UE</td></tr>
+         <tr><td>LIB2004</td><td>Ancient Indian History</td><td>4</td><td>UE</td></tr>
+         <tr><td>MGT1007</td><td>Economics for Engineers</td><td>3</td><td>UE</td></tr>
+         <tr><td>MAT1002</td><td>Applications of Differential and Difference Equations</td><td>4</td><td>UC</td></tr>
+         <tr><td>MAT2003</td><td>Optimization Techniques</td><td>4</td><td>PE</td></tr>
+         <tr><td>MAT1003</td><td>Discrete Mathematical Structures</td><td>4</td><td>PC</td></tr>
+         <tr><td>MAT2005</td><td>Linear Algebra</td><td>4</td><td>UE</td></tr>
+         <tr><td>MAT1001</td><td>Calculus for Engineers</td><td>4</td><td>UC</td></tr>
+         <tr><td>MAT1011</td><td>Applied Statistics</td><td>4</td><td>UC</td></tr>
+         <tr><td>MAT2011</td><td>Graph Theory and Applications</td><td>3</td><td>UE</td></tr>
+         <tr><td>MAT2013</td><td>Financial Mathematics</td><td>4</td><td>UE</td></tr>
+         <tr><td>MAT2014</td><td>Nonlinear Dynamics and Chaos</td><td>4</td><td>UE</td></tr>
+         <tr><td>MGT1015</td><td>Fundamentals of Consumer Behaviour</td><td>3</td><td>UE</td></tr>
+         <tr><td>TEC3001</td><td>Design Thinking</td><td>3</td><td>UC</td></tr>
+         <tr><td>MGT2014</td><td>Fundamentals of Marketing Management</td><td>3</td><td>UE</td></tr>
+         <tr><td>MGT1040</td><td>Entrepreneurship</td><td>2</td><td>UC</td></tr>
+         <tr><td>MGT2016</td><td>Essentials of Marketing Management</td><td>4</td><td>UE</td></tr>
+         <tr><td>MGT1042</td><td>Financial and Management Accounting</td><td>4</td><td>UE</td></tr>
+         <tr><td>LAW1005</td><td>Introduction to Indian Constitution</td><td>3</td><td>UE</td></tr>
+         <tr><td>MGT1029</td><td>Basic Law for Engineers</td><td>3</td><td>UE</td></tr>
+         <tr><td>LAW1003</td><td>Human Rights and Criminal Justice system</td><td>3</td><td>UE</td></tr>
+         <tr><td>STS2006</td><td>Getting Started to Skill Enhancement</td><td>1</td><td>UC</td></tr>
+         <tr><td>CSE2007</td><td>Database Management Systems</td><td>4</td><td>PC</td></tr>
+         <tr><td>CSE3004</td><td>Design and Analysis of Algorithms</td><td>4</td><td>PC</td></tr>
+         <tr><td>CSE3009</td><td>No SQL Databases</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE2010</td><td>Secure Coding</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4017</td><td>Health Care Analytics</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4012</td><td>UI UX User Experience Design</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3018</td><td>Software Configuration Management</td><td>3</td><td>PE</td></tr>
+         <tr><td>MAT1018</td><td>Computational Linear Algebra: Learning from Data</td><td>4</td><td>UE</td></tr>
+         <tr><td>PHY1002</td><td>Semiconductor Device Physics</td><td>3</td><td>UE</td></tr>
+         <tr><td>MGT1109</td><td>Management Accounting</td><td>3</td><td>UE</td></tr>
+         <tr><td>MGT1103</td><td>Micro Economics</td><td>3</td><td>UE</td></tr>
+         <tr><td>MAT2001</td><td>Numerical Methods for Engineers</td><td>3</td><td>UE</td></tr>
+         <tr><td>ENG1017</td><td>Film Appreciation</td><td>3</td><td>UE</td></tr>
+         <tr><td>CHY1005</td><td>Industrial Chemistry for Engineers</td><td>3</td><td>UE</td></tr>
+         <tr><td>CHY1007</td><td>Energy Materials and Their Applications</td><td>3</td><td>UE</td></tr>
+         <tr><td>CHY1006</td><td>Corrosion Science and Engineering</td><td>3</td><td>UE</td></tr>
+         <tr><td>STS3006</td><td>Basic Competitive Coding - I</td><td>1</td><td>UE</td></tr>
+         <tr><td>MGT1036</td><td>Introduction to Macroeconomics</td><td>3</td><td>UE</td></tr>
+         <tr><td>CHY2002</td><td>Organic Electronics</td><td>3</td><td>UE</td></tr>
+         <tr><td>LAW1108</td><td>Business Law</td><td>3</td><td>UE</td></tr>
+         <tr><td>LIB1013</td><td>Introduction to Comics and Graphic Narratives</td><td>3</td><td>UE</td></tr>
+         <tr><td>LIB2005</td><td>Digital Storytelling</td><td>4</td><td>UE</td></tr>
+         <tr><td>LAW2001</td><td>Business and Human Rights</td><td>3</td><td>UE</td></tr>
+         <tr><td>MGT1002</td><td>Lean Start-up Management</td><td>3</td><td>UE</td></tr>
+         <tr><td>INL1001</td><td>Functional Hindi for non-Hindi Speakers</td><td>2</td><td>UE</td></tr>
+         <tr><td>HUM2104</td><td>Indian Economy : Problems and Policies</td><td>4</td><td>UE</td></tr>
+         <tr><td>ECE1010</td><td>Probability and Random Processes</td><td>4</td><td>UE</td></tr>
+         <tr><td>LAW1008</td><td>Intellectual Property Law for Engineers</td><td>4</td><td>UE</td></tr>
+         <tr><td>MAT1021</td><td>Statistics for Economists</td><td>4</td><td>UE</td></tr>
+         <tr><td>LIB1016</td><td>Theory of Performance and Practice</td><td>4</td><td>UE</td></tr>
+         <tr><td>LIB2007</td><td>The Aesthetics of Performing Arts</td><td>4</td><td>UE</td></tr>
+         <tr><td>HUM2009</td><td>Basic Econometrics</td><td>4</td><td>UE</td></tr>
+         <tr><td>ENG1015</td><td>Introduction to 20th Century European Literature in Translation</td><td>3</td><td>UE</td></tr>
+         <tr><td>CSE3015</td><td>Natural Language Processing</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE1012</td><td>Problem Solving using Python</td><td>4</td><td>UC</td></tr>
+         <tr><td>CSE2001</td><td>Data Structures and Algorithms</td><td>4</td><td>UC</td></tr>
+         <tr><td>MEC1002</td><td>Engineering Graphics</td><td>2</td><td>UC</td></tr>
+         <tr><td>STS1002</td><td>Fundamentals of Aptitude</td><td>1</td><td>UC</td></tr>
+         <tr><td>FRL1006</td><td>Japanese for Beginners</td><td>2</td><td>UC</td></tr>
+         <tr><td>FRL1005</td><td>German for Beginners</td><td>2</td><td>UC</td></tr>
+         <tr><td>STS1009</td><td>Introduction to Quantitative, Logical and Verbal Ability</td><td>1</td><td>UC</td></tr>
+         <tr><td>MGT1001</td><td>Ethics and Values</td><td>0</td><td>UC</td></tr>
+         <tr><td>STS1004</td><td>Introduction to Problem Solving</td><td>1</td><td>UC</td></tr>
+         <tr><td>STS1007</td><td>Arithmetic Problem Solving</td><td>1</td><td>UC</td></tr>
+         <tr><td>ENG2001</td><td>English for Professional Communication</td><td>3</td><td>UC</td></tr>
+         <tr><td>FRL1004</td><td>Basic Spanish</td><td>2</td><td>UC</td></tr>
+         <tr><td>STS2009</td><td>Arithmetic Problem Solving Skills</td><td>1</td><td>UC</td></tr>
+         <tr><td>STS2007</td><td>Enhancing Problem Solving Skills</td><td>1</td><td>UC</td></tr>
+         <tr><td>STS2008</td><td>Numerical Ability and Cognitive Intelligence</td><td>1</td><td>UC</td></tr>
+         <tr><td>ECS1002</td><td>Engineering Clinics - Python and Raspberry Pi</td><td>2</td><td>UC</td></tr>
+         <tr><td>BIC4002</td><td>Internship/ Senior Design Project</td><td>10</td><td>UC</td></tr>
+         <tr><td>ECS3001</td><td>Engineering Clinics - II</td><td>2</td><td>UC</td></tr>
+         <tr><td>CAP4001</td><td>Capstone</td><td>4</td><td>UC</td></tr>
+         <tr><td>LIB1015</td><td>Introduction to Communication and Rhetoric</td><td>4</td><td>UC</td></tr>
+         <tr><td>ECE2005</td><td>Signals and Systems</td><td>4</td><td>UC</td></tr>
+         <tr><td>MEC1008</td><td>Engineering Mechanics</td><td>4</td><td>UC</td></tr>
+         <tr><td>HUM1007</td><td>Introduction to Digital Humanities : Doing Digital History</td><td>4</td><td>UC</td></tr>
+         <tr><td>PHY1011</td><td>Material Characterization Techniques</td><td>4</td><td>UC</td></tr>
+         <tr><td>CSE1017</td><td>Introduction to Geographical Information Systems</td><td>3</td><td>UC</td></tr>
+         <tr><td>MEC1009</td><td>Introduction to Digital Manufacturing</td><td>4</td><td>UC</td></tr>
+         <tr><td>CSE4013</td><td>Reverse Engineering</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE3020</td><td>Product Definition and Validation</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE4014</td><td>Team Software Process</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE4011</td><td>Internet of Things</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4015</td><td>Network Administration</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE2012</td><td>Knowledge Representation and Reasoning</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE4018</td><td>Computer Vision and Robotics</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4020</td><td>Agent Based Intelligent Systems</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4021</td><td>Introduction to Cognitive Modelling</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4022</td><td>Modelling and Simulation</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE3011</td><td>Network Programming</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3012</td><td>Network Security</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4003</td><td>Parallel Computing</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4023</td><td>Introduction to Blockchain Technology</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE2022</td><td>Edge Artificial Intelligence</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE1018</td><td>Cyber Physical System Security</td><td>4</td><td>PE</td></tr>
+         <tr><td>ECE4013</td><td>Image and Video Processing</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3032</td><td>Competitive Programming</td><td>6</td><td>PE</td></tr>
+         <tr><td>MEC2016</td><td>Robot Kinematics and Dynamics</td><td>4</td><td>PE</td></tr>
+         <tr><td>MEC1006</td><td>Introduction to Robotics</td><td>2</td><td>PE</td></tr>
+         <tr><td>ECE4015</td><td>Embedded Robotic Programming</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4029</td><td>Advanced Data Analytics</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4028</td><td>Advanced Cyber Security</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4027</td><td>Data Analytics</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4026</td><td>Cyber Security</td><td>4</td><td>PE</td></tr>
+         <tr><td>ECE2011</td><td>Signal Acquisition and Conditioning</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3013</td><td>Secure Group Communications</td><td>4</td><td>PE</td></tr>
+         <tr><td>ECE4003</td><td>Embedded Programming</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3010</td><td>Network Design and Performance Evaluation</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3001</td><td>Agile Development Process</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4008</td><td>Social Network Analysis</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3007</td><td>Information Retrieval</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE3006</td><td>Data Visualization</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE2011</td><td>Cyber Security and Digital Forensics</td><td>4</td><td>PE</td></tr>
+         <tr><td>CSE4010</td><td>Wireless and Mobile Security</td><td>3</td><td>PE</td></tr>
+         <tr><td>CSE4009</td><td>Wireless and Mobile Computing</td><td>3</td><td>PE</td></tr>
+        </tbody></table>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
